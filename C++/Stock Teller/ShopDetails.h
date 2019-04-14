@@ -15,11 +15,11 @@ class Shop{
 		char name[10];
 		int code, currStock;
 	
-		void getdata();
+		void getdata();				// Get the Product Details
 
-		void showdata();
+		void showdata();			// Displaying the Product Details
 
-		void upload();
+		void upload();				// Uploading the details into "productDetails.dat"
 };
 
 class User{
@@ -31,21 +31,21 @@ class User{
 		vector<Item> v;
 		float total;
 
-		void getDetails();
+		void getDetails();			// Getting the New User Details
 
-		int download(int , string );
+		int download(int , string );		// If the User is already existed then get his details from "UserDetails.dat"
 
-		void update();
+		void update();				// For Existing User
 
-		void upload();
+		void upload();				// For New User
 
-		void savePurchasingDetails(Item*, int );
+		void savePurchasingDetails(Item*, int ); // Storing the purchasing details into a vector
 
-		void calculateTotalCost();
+		void calculateTotalCost();		// Calculate the total Cost..
 
-		void displayPurchaseDetails();
+		void displayPurchaseDetails();		// Displaying user's Purchasing History
 
-		void getPurchasingDetails(Shop* );
+		void getPurchasingDetails(Shop* );	// Getting the purchasing details
 };
 
 //int User::ID=11611;
